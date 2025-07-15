@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity">
+    
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="详情"
+            app:titleTextColor="@color/white"
+            android:background="@color/my_light_primary"
+            app:navigationIcon="@drawable/back_white"/>
+
+        <ImageView
+            android:id="@+id/product_img"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@mipmap/fuz_1"/>
+        
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sale_1"
+                    android:layout_marginBottom="2dp"/>
+
+                <TextView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="998"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/product_title"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="「浮云堂.雅」素影.新中式国风绵羊毛双面呢大衣女2024冬毛呢外套"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="品牌：浮云堂
+风格：通勤 通勤：文艺
+服装版型：直筒型
+吊牌价：2380
+面料：绵羊毛
+销售渠道类型：纯电商(只在线上销售)
+袖型：常规
+材质成分：绵羊毛75.7% 聚酯纤维21.6% 其他2.7%
+货号：F21-FS-6172
+适用年龄：30-34周岁
+厚薄：厚款
+上市年份季节：2024年冬季
+袖长：长袖
+领子：圆领
+衣长：常规
+衣门襟：单排扣
+图案：纯色
+里料图案：纯色
+尺码：S M L
+颜色分类：焦茶色"
+            android:textColor="#666"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="12dp"/>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/addCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:text="加入购物车"/>
+
+</RelativeLayout>
